@@ -1,0 +1,148 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #333;
+  margin: 0 auto; }
+
+.page-container {
+  min-height: 100px;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative; }
+  .page-container .segment {
+    width: 30%;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%); }
+  .page-container .shape {
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/sprite.png");
+    background-size: 200px 100px;
+    float: right; }
+  .page-container .sh1 {
+    background-position: 150px 50px; }
+  .page-container .s1 {
+    -webkit-animation: firstAnimation1 10s ease 1s infinite;
+    animation: firstAnimation1 10s ease 1s infinite;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s; }
+
+@-webkit-keyframes firstAnimation1 {
+  0% {
+    top: -100%;
+    width: 20%; }
+  50% {
+    top: 50px;
+    width: 20%; }
+  100% {
+    top: 50px;
+    width: 50%; } }
+
+@keyframes firstAnimation1 {
+  0% {
+    top: -100%;
+    width: 20%; }
+  50% {
+    top: 50px;
+    width: 20%; }
+  100% {
+    top: 50px;
+    width: 50%; } }
+  .page-container .sh2 {
+    background-position: 200px 50px; }
+  .page-container .s2 {
+    -webkit-animation: firstAnimation2 10s ease 1s infinite;
+    animation: firstAnimation2 10s ease 1s infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s; }
+
+@-webkit-keyframes firstAnimation2 {
+  0% {
+    top: -100%;
+    width: 20%; }
+  50% {
+    top: 100px;
+    width: 20%; }
+  100% {
+    top: 100px;
+    width: 50%; } }
+
+@keyframes firstAnimation2 {
+  0% {
+    top: -100%;
+    width: 20%; }
+  50% {
+    top: 100px;
+    width: 20%; }
+  100% {
+    top: 100px;
+    width: 50%; } }
+  .page-container .sh3 {
+    background-position: 250px 50px; }
+  .page-container .s3 {
+    -webkit-animation: firstAnimation3 10s ease 1s infinite;
+    animation: firstAnimation3 10s ease 1s infinite;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s; }
+
+@-webkit-keyframes firstAnimation3 {
+  0% {
+    top: -100%;
+    width: 20%; }
+  50% {
+    top: 150px;
+    width: 20%; }
+  100% {
+    top: 150px;
+    width: 50%; } }
+
+@keyframes firstAnimation3 {
+  0% {
+    top: -100%;
+    width: 20%; }
+  50% {
+    top: 150px;
+    width: 20%; }
+  100% {
+    top: 150px;
+    width: 50%; } }
+  .page-container .sh4 {
+    background-position: 300px 50px; }
+  .page-container .s4 {
+    -webkit-animation: firstAnimation4 10s ease 1s infinite;
+    animation: firstAnimation4 10s ease 1s infinite;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s; }
+
+@-webkit-keyframes firstAnimation4 {
+  0% {
+    top: -100%;
+    width: 20%; }
+  50% {
+    top: 200px;
+    width: 20%; }
+  100% {
+    top: 200px;
+    width: 50%; } }
+
+@keyframes firstAnimation4 {
+  0% {
+    top: -100%;
+    width: 20%; }
+  50% {
+    top: 200px;
+    width: 20%; }
+  100% {
+    top: 200px;
+    width: 50%; } }

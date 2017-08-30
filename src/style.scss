@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+body {
+	//font-family: $fontFamily;
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #333;
+	margin: 0 auto;
+}
+.page-container {
+	min-height: 100px;
+	max-width: 1000px;
+	margin:0 auto;
+	position: relative;
+    .segment{
+		width: 30%;
+		height: 50px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+    }
+    .shape{
+		width: 50px;
+		height: 50px;
+        background-image: url('../images/sprite.png');
+		background-size: 200px 100px;
+		float: right;
+}
+@for $i from 1 through 4{
+	.sh#{$i}{
+		background-position:($i+2)*50px 50px;
+	}
+	.s#{$i}{
+		animation: firstAnimation#{$i} 10s ease 1s infinite;
+		animation-delay: 0.5s * $i;
+	}
+	@keyframes firstAnimation#{$i} {
+		0%{top: -100%; width: 20%;}
+		50%{top: $i * 50px;width: 20%;}
+		100%{top: $i * 50px;width: 50%}
+	}
+}}
